@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.day, .hourly {
+    width: 80%;
+    margin: auto;
+    background-color: beige;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.hourly-title {
+    margin-bottom: 20px;
+}
+
+.day-image {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 100%;
+}
+
+.wather-hourly {
+    display: flex;
+    justify-content: space-around;
+}

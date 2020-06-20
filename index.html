@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wather</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <div class="day">
+      <div class="title">
+          <div class="city"></div>
+          <div class="date"></div>
+      </div>
+      <div class="wrapper">
+        <div class="column-one">
+            <div class="describe"></div>
+            <div class="image"></div>
+        </div>
+        <div class="column-two">
+            <div class="temperature"><span class="temperature-inner"></span><span>&deg;C</span></div>
+        </div>
+        <div class="column-three">
+            <div class="min-temperature">Min temperature:<span class="min-temperature-inner"></span><span>&deg;C</span></div>
+            <div class="max-temperature">Max temperature:<span class="max-temperature-inner"></span><span>&deg;C</span></div>
+            <div class="wind-speed">Wind speed (km/h):<span class="wind-speed-inner"></span></div>
+        </div>
+      </div>
+  </div>
+  <div class="hourly">
+      <div class="hourly-title">Hourly</div>
+      <div class="wather-hourly" id="watherHourlyId">
+          <div class="hourly-title-inner">
+              <div class="day-hourly"></div>
+              <div class="day-image"></div>
+              <div class="day-forecast">Forecast:</div>
+              <div class="day-temp">Temp &deg;C</div>
+              <div class="day-wind">Wind (km/h):</div>
+          </div>        
+      </div>
+  </div>
+    
+
+    <script src="js/index.js"></script>
+</body>
+</html>
