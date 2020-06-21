@@ -6,20 +6,77 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.top {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-main {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #4db6ac;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+
+
 .title {
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4db6ac;
+    margin-bottom: 15px;
 }
 
 .wrapper {
     display: flex;
     justify-content: space-around;
+    height: 200px;
+    color: rgb(94, 87, 87);
+}
+
+.column-one {
+    font-size: larger;
+    width: 30%;
+    text-align: center;
+}
+
+.describe {
+    height: 20%;
+}
+
+.image {
+    height: 80%;
+}
+
+.column-two {
+    font-size:40px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.column-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: large;
 }
 
 .day, .hourly {
     width: 80%;
     margin: auto;
-    background-color: beige;
+    background-color: rgb(230, 230, 221);
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 15px;
@@ -27,6 +84,9 @@
 
 .hourly-title {
     margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4db6ac;
 }
 
 .day-image {
@@ -42,4 +102,12 @@ img {
 .wather-hourly {
     display: flex;
     justify-content: space-around;
+}
+
+.hourly-title-inner {
+    text-align: center;
+}
+
+#inner-hourly {
+    text-align: left;
 }
