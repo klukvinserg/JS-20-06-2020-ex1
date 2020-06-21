@@ -6,6 +6,11 @@ let dataFromServer;
 
 let req = new XMLHttpRequest();
 
+function clickSearch() {
+    console.log(search.value)
+}
+
+
 if (window.XMLHttpRequest) {
   req = new XMLHttpRequest();
 } else {
@@ -135,3 +140,4 @@ function reqFun(date) {
     console.log(dataFromServerH);
   }
 }
+
