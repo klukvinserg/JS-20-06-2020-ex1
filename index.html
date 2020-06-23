@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Wather</title>
-    
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-<body>
- 
-     <div class="top">
-         <div class="title-main"><span>CURRENT WEATHER</span></div>
-         <div class="search">
-            <div class="col s5">
-                <div class="input-field">
-                    <input id="search" name="login" type="search" required="required" minlength="3">
-                    <label for="search">Enter city</label>
-                </div>
-                
-            </div>
-
-            <a class="btn-floating btn-small waves-effect waves-light teal lighten-2" onclick="clickSearch(event)">
-                <i class="material-icons">search</i>
-            </a>
-            
-
-
-         </div>
-     </div>
-
-  <div class="day">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="top">
+      <div class="title-main"><span>CURRENT WEATHER</span></div>
+      <div class="search">
+        <div class="col s5">
+          <div class="input-field">
+            <input id="search" name="login" type="search" required="required" minlength="3"/>
+            <label for="search">Enter city</label>
+          </div>
+        </div>
+        <a class="btn-floating btn-small waves-effect waves-light teal lighten-2" onclick="clickSearch(event)">
+          <i class="material-icons">search</i>
+        </a>
+      </div>
+    </div>
+    <div id="day">
       <div class="title">
-          <div class="city"></div>
-          <div class="date"></div>
+        <div class="city"></div>
+        <div class="date"></div>
       </div>
       <div class="wrapper">
         <div class="column-one">
-            <div class="describe"></div>
-            <div class="image"></div>
+          <div class="describe"></div>
+          <div class="image"></div>
         </div>
         <div class="column-two">
-            <div class="temperature"><span class="temperature-inner"></span><span>&deg;C</span></div>
+          <div class="temperature">
+            <span class="temperature-inner"></span><span>&deg;C</span>
+          </div>
         </div>
         <div class="column-three">
-            <div class="min-temperature">Min temperature:  <span class="min-temperature-inner"></span><span>&deg;C</span></div>
-            <div class="max-temperature">Max temperature:  <span class="max-temperature-inner"></span><span>&deg;C</span></div>
-            <div class="wind-speed">Wind speed (km/h):  <span class="wind-speed-inner"></span></div>
+          <div class="min-temperature">
+            Min temperature: <span class="min-temperature-inner"></span
+            ><span>&deg;C</span>
+          </div>
+          <div class="max-temperature">
+            Max temperature: <span class="max-temperature-inner"></span
+            ><span>&deg;C</span>
+          </div>
+          <div class="wind-speed">
+            Wind speed (km/h): <span class="wind-speed-inner"></span>
+          </div>
         </div>
       </div>
-  </div>
-  <div class="hourly">
+    </div>
+    <div id="hourly">
       <div class="hourly-title">Hourly</div>
       <div class="wather-hourly" id="watherHourlyId">
-          <div class="hourly-title-inner" id="inner-hourly">
-              <div class="day-hourly"></div>
-              <div class="day-image"></div>
-              <div class="day-forecast">Forecast:</div>
-              <div class="day-temp">Temp &deg;C</div>
-              <div class="day-wind">Wind (km/h):</div>
-          </div>        
+        <div class="hourly-title-inner" id="inner-hourly">
+          <div class="day-hourly"></div>
+          <div class="day-image"></div>
+          <div class="day-forecast">Forecast:</div>
+          <div class="day-temp">Temp &deg;C</div>
+          <div class="day-wind">Wind (km/h):</div>
+        </div>
       </div>
-  </div>
-
-  <div id="result">
-      <p id="statusNumber"></p>
-      <p id="statusTextTop"></p>
-      <p id="statusTextBottom"></p>
-  </div>
-
+    </div>
+    <div id="result">
+      <div class="resultInner">
+        <p id="statusNumber"></p>
+        <p id="statusTextTop"></p>
+        <p id="statusTextBottom"></p>
+      </div>
+    </div>
     <script src="js/index.js"></script>
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+  </body>
 </html>

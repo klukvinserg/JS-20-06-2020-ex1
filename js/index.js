@@ -12,7 +12,9 @@ function clickSearch() {
   search.value = "";
   let delActive = document.getElementsByTagName("label");
   delActive[0].className = "";
-  //   console.log(delActive)
+  day.style.display = "block";
+  hourly.style.display = "block";
+  result.style.display = "none";
 }
 
 getData();
@@ -31,8 +33,6 @@ function getData() {
       reqFun(this.responseText);
     } else if (this.readyState === 4) {
       funDel();
-      console.log(req.status);
-      // return false
     }
   };
 
@@ -68,7 +68,6 @@ function getData() {
     );
     document.querySelector(".wind-speed-inner").innerText =
       dataFromServer.wind.speed;
-    // console.log(dataFromServer);
 
     get();
 
@@ -104,8 +103,6 @@ function getData() {
         if (delDiv.length > 1) {
           for (let i = 1; i < delDiv.length; i++) delDiv[i].remove();
         }
-
-        //   console.log(delDiv);
 
         getWeekDay(day);
 
@@ -162,24 +159,16 @@ function getData() {
 
           watherHourlyId.appendChild(createDivHTI);
         }
-
-        //   console.log(dataFromServerH);
       }
     }
   }
 }
 
 function funDel() {
-  let delOne = document.getElementsByClassName("day");
-  delOne[0].remove();
-
-  let delTwo = document.getElementsByClassName("hourly");
-  delTwo[0].remove();
-
-  // let createEl = document.createElement('div');
+  day.style.display = "none";
+  hourly.style.display = "none";
+  result.style.display = "block";
   statusNumber.innerText = "404";
   statusTextTop.innerText = "NOT FOUND";
   statusTextBottom.innerText = "Please enter differen city";
-
-  //    result.style.display = "block"
 }
